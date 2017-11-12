@@ -68,6 +68,8 @@ function lowInventory() {
 function productName() {
     var productNameArr = []
 
+    // grab stock_quanity with single select statement
+
     connection.query('select product_name from products', function (err, res) {
         for (var i = 0; i < res.length; i++) {
             productNameArr.push(res[i].product_name)

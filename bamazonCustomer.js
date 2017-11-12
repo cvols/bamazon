@@ -107,3 +107,4 @@ function purchaseItem(number, id, quanity, name, price, sales) {
 
     connection.end()
 }
+
